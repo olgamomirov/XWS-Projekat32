@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Korisnik xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/OlgaM/Desktop/kosrinickimodul.xsd">
+    <Pretraga xsi:type="TOsnovnaPretraga">
+        <Mesto>
+            <Drzava>Spanija</Drzava>
+            <Grad>Madrid</Grad>
+        </Mesto>
+        <Vremenski_interval>
+            <Datum_dolaska>2018-11-09</Datum_dolaska>
+            <Datum_povratka>2018-11-15</Datum_povratka>
+        </Vremenski_interval>
+        <Broj_osoba>2</Broj_osoba>
+    </Pretraga>
+</Korisnik>

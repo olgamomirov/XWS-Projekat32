@@ -75,15 +75,60 @@
                             </xs:restriction>
                         </xs:simpleType>
                     </xs:element>
-                    <xs:element name="Dodatne_usluge"/>
+                    <xs:element name="Dodatne_usluge" maxOccurs="1" minOccurs="1">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="Parking" type="TDodatneUsluge"/>
+                                <xs:element name="WiFi" type="TDodatneUsluge"/>
+                                <xs:element name="Dorucak" type="TDodatneUsluge"/>
+                                <xs:element name="Polu_pansion" type="TDodatneUsluge"/>
+                                <xs:element name="Pansion" type="TDodatneUsluge"/>
+                                <xs:element name="All_inclusive" type="TDodatneUsluge"/>
+                                <xs:element name="Kucni_ljubimci" type="TDodatneUsluge"/>
+                                <xs:element name="TV" type="TDodatneUsluge"/>
+                                <xs:element name="Mini_kuhinja-kuhinja" type="TDodatneUsluge"/>
+                                <xs:element name="Privatno_kupatilo" type="TDodatneUsluge"/>
+                                <xs:element name="Besplatno_otkazivanje">
+                                    <xs:complexType>
+                                        <xs:complexContent>
+                                            <xs:extension base="TDodatneUsluge">
+                                                <xs:sequence>
+                                                  <xs:element minOccurs="0" name="Datum"
+                                                  type="xs:date"/>
+                                                </xs:sequence>
+                                            </xs:extension>
+                                        </xs:complexContent>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
                 </xs:sequence>
             </xs:extension>
         </xs:complexContent>
+    </xs:complexType>
+    <xs:complexType name="TDodatneUsluge">
+        <xs:attribute form="unqualified" name="podrzano" type="xs:boolean" use="required"/>
     </xs:complexType>
     <xs:element name="Korisnik">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="Pretraga" type="TPretraga"/>
+                <xs:element name="Registracija">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Rezervacija">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="Poruke"/>
+                                        <xs:element name="Otkazivanje"/>
+                                        <xs:element name="Ocena_i_komentar"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
