@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Korisnik xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/OlgaM/Desktop/kosrinickimodul.xsd">
+    <Pretraga xsi:type="TNaprednaPretraga">
+        <Mesto>
+            <Drzava>Spanija</Drzava>
+            <Grad>Madrid</Grad>
+        </Mesto>
+        <Vremenski_interval>
+            <Datum_dolaska>2018-11-09</Datum_dolaska>
+            <Datum_povratka>2018-11-15</Datum_povratka>
+        </Vremenski_interval>
+        <Broj_osoba>2</Broj_osoba>
+        <Tip_smestaja>
+            <Hotel></Hotel>
+        </Tip_smestaja>
+        <Kategorija_smestaja>
+            <Zvezdica_3></Zvezdica_3>
+        </Kategorija_smestaja>
+        <Udaljenost_od_lokacije>15</Udaljenost_od_lokacije>
+        <Dodatne_usluge>
+            <Parking podrzano="true"/>
+            <WiFi podrzano="true"/>
+            <Dorucak podrzano="true"/>
+            <Polu_pansion podrzano="false"/>
+            <Pansion podrzano="false"/>
+            <All_inclusive podrzano="false"/>
+            <Kucni_ljubimci podrzano="true"/>
+            <TV podrzano="true"/>
+            <Mini_kuhinja-kuhinja podrzano="true"/>
+            <Privatno_kupatilo podrzano="true"/>
+            <Besplatno_otkazivanje podrzano="false"/>
+        </Dodatne_usluge>
+    </Pretraga>
+</Korisnik>

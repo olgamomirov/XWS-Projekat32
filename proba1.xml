@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Korisnik xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/C:/Users/OlgaM/Desktop/kosrinickimodul.xsd">
+    <Pretraga xsi:type="TNaprednaPretraga">
+        <Mesto>
+            <Drzava></Drzava>
+            <Grad></Grad>
+        </Mesto>
+        <Vremenski_interval>
+            <Datum_dolaska>2010-10-11</Datum_dolaska>
+            <Datum_povratka>2010-11-10</Datum_povratka>
+        </Vremenski_interval>
+        <Broj_osoba>12</Broj_osoba>
+        <Tip_smestaja></Tip_smestaja>
+    </Pretraga>
+</Korisnik>
